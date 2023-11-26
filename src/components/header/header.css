@@ -1,0 +1,55 @@
+
+
+
+.header {
+    display: flex;
+    padding-bottom: 1vmin;
+    margin-top: 2.5vmin;
+    align-items: center;
+    gap: 1vmin;
+    color: var(--text-color);
+    fill: var(--text-color);
+}
+
+.help{
+    background: url("./help.svg");
+}
+  
+.stat{
+    background: url("./stat.svg");
+}
+
+.setting{
+    background: url("./setting.svg"); 
+}
+
+
+.title {
+    text-align: center;
+    margin: 0;
+    font-size: max(5vmin, 20px);
+    flex-grow: 1;
+}
+
+.icon-btn {
+    width: 5vmin;
+    height: 5vmin;
+    min-width: 35px;
+    min-height: 35px;
+    /*background: none;*/
+    border: none;
+    cursor: pointer;
+    transition: fill 150ms ease-in-out;
+    outline-color: var(--text-color-light);
+    flex-shrink: 0;
+}
+  
+.icon-btn:hover,
+.icon-btn:focus {
+   fill: var(--text-color-light);
+}
+
+.score-container {
+    flex-basis: calc(max(10vmin, 70px) + 1vmin);
+    flex-shrink: 0;
+}

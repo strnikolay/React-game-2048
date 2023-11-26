@@ -1,10 +1,11 @@
 import React from 'react'
+import "./header.css"
 
 export default function Header() {
   return (
     <header class="header">
-      <button data-help-btn class="icon-btn" />
-      <button data-stats-btn class="icon-btn" />
+      <button data-help-btn class="help icon-btn" />
+      <button data-stats-btn class="stat icon-btn" />
       <h1 class="title">2048 Daily</h1>
       <div class="score-container stat-container">
         <span class="stat-label">Score</span>
@@ -12,7 +13,7 @@ export default function Header() {
           <div data-score-amount class="stat-amount score-amount">0</div>
         </div>
       </div>
-      {/*<button data-settings-btn class="icon-btn"></button>*/} 
+      <button data-settings-btn class="setting icon-btn"></button> 
     </header>
   )
 }

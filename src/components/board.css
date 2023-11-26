@@ -1,0 +1,23 @@
+
+.game-board {
+    --grid-size: 4;
+    --cell-size: 19vmin;
+    --cell-gap: 2vmin;
+    margin: auto 0;
+    font-size: calc(var(--cell-size) / 8 * 3);
+    background-color: #CCC;
+    border-radius: 1vmin;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-size), var(--cell-size));
+    grid-template-columns: repeat(var(--grid-size), var(--cell-size));
+    gap: var(--cell-gap);
+    padding: var(--cell-gap);
+    position: relative;
+    user-select: none;
+  }
+
+  
+.cell {
+    background-color: #AAA;
+    border-radius: 1vmin;
+  }
