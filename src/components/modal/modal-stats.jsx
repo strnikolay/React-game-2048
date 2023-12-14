@@ -1,3 +1,11 @@
+import React from 'react'
+import "./modal.css"
+import one from "./one.svg"
+
+export default function Modalstat () {
+  return (
+    <div>
+
 <template data-stats-modal-template>
 <div class="modal stat-modal" data-modal role="dialog" aria-labelledby="statsModalTitle">
   <button aria-label="Close" class="modal-close-btn" data-modal-close>&times;</button>
@@ -50,3 +58,7 @@
   </div>
 </div>
 </template>
+
+</div>
+)
+}

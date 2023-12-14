@@ -2,6 +2,9 @@ import React from 'react'
 import "./header.css"
 
 export default function Header() {
+  
+  const scoreElem = document.querySelector("[data-score]")
+  const scoreAmountElem = document.querySelector("[data-score-amount]")
   return (
     <header class="header">
       <button data-help-btn class="help icon-btn" />
