@@ -32,7 +32,11 @@ function Board(props) {
     const gameBoard = document.getElementById("main-game")
     
     return (
-        <main id="main-game" class="game-board">
+        <main id="main-game" class="game-board" 
+        gridSize={gridSize}
+        cell-size={cellSize}//+"vmin"
+        cell-gap={cellGap}//+vmin
+        >
             <Cell/>
             <Cell/>
             <Cell/>
